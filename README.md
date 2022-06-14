@@ -19,3 +19,19 @@ let strings = ["avengers", "captain america", "ironman", "black panther"];
 const heros = [ { name: 'Spider-Man' }, { name: 'Thor' }, { name: 'Black Panther' }, { name: 'Captain Marvel' }, { name: 'Silver Surfer' } ];
 
 const inputWords = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
+
+//find the sum of all elements in an array;
+
+//print even nos. till 'n' with loop
+
+//create a function accepting number argument and 
+//countdown till 0 and log 'done' on console
+
+
+//print array in reverse order in loop
+
+
+//pum(1)(2)(3)// implement this with the result as 6
+
+
+
