@@ -1,9 +1,6 @@
 let myColor = ["Red", "Green", "White", "Black"];
-let simple = myColor.toString();
-console.log(simple);
-
-let gold = String("Red+Green+White+Black");
-console.log(gold);
+console.log(myColor.join());
+console.log(myColor.join('+'));
 
 let strings = ["avengers", "captain america", "ironman", "black panther"];
 const upper = [];
@@ -12,22 +9,19 @@ strings.forEach(element => {
 });
 console.log(upper);
 
-const heroes = [
+
+const heros = [
     {name: "Spider-Man"},
     {name: "Thor"},
     {name:"Black Panther"},
     {name: "Captain Marvel"},
     {name: "Silver Surfer"}
 ];
-let ten = [];
-for(var i=0; i<heroes.length; i++) {
-    ten.push(heroes[i]); ten[i].id=i;
-};
-heroes.forEach(function(o) {
-  o.hero = o.name;
-  delete o.name;
+const arr = heros.map((hero, index) => {
+  return {id:index, hero: hero.name}
 });
-console.log(ten);
+console.log(arr);
+               
 
 const inputWords = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
 const choose = inputWords.slice(3);
