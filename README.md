@@ -6,7 +6,6 @@ Write a simple JavaScript program to join all elements of the following array in
 Create a new array whose elements is in uppercase of words present in the original array.
 Use the .map() method on the heros array to return a new array.
 The new array should rename the 'name' key to 'hero'.
-The 'name' key should not appear in the new array.
 The new array should have a new key added called (id).
 The key 'id' should be based on the index.
 
