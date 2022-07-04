@@ -2,12 +2,9 @@ let myColor = ["Red", "Green", "White", "Black"];
 console.log(myColor.join());
 console.log(myColor.join('+'));
 
+
 let strings = ["avengers", "captain america", "ironman", "black panther"];
-const upper = [];
-strings.forEach(element => {
-  upper.push(element.toUpperCase());
-});
-console.log(upper);
+console.log(strings.map(string => string.toUpperCase()));
 
 
 const heros = [
@@ -26,3 +23,9 @@ console.log(arr);
 const inputWords = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
 const choose = inputWords.slice(3);
 console.log(choose);
+
+or ||
+  
+const inputWords = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
+const longWords = inputWords.filter(word => word.length > 6);
+console.log(longWords);
