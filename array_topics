@@ -1,27 +1,28 @@
 //find the sum of all elements
-let arr_1 = [50,10,20];
- let arr_2 = [1,1,1];
-
- function sum (arr){
-  let sum = 0;
-for (let i = 0; i < arr.length; i++){
-        sum+=arr[i];}
-       return sum;}
-
- console.log(sum(arr_1)+sum(arr_2));
+function Sum(arr){
+	sum=0;
+      for(let i=0;i<arr.length;i++){
+        sum+=arr[i];
+      }
+      return sum;
+    }
+    let sum=0;
+    let arr_1 = [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2];
+    let arr_2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26];
+ console.log("Final_Sum: "+(Sum(arr_1) + Sum(arr_2)));
 
 
 //print even nos. till 'n' with loop
 
-let n=22;
-function Even(n){
-    for (let i = 1; i <= n; i++){
-        if (i%2==0){
-            console.log(i);
-        }
+function PrintEvenNumber(n){
+      for(let i=1;i<=n;i++){
+		if (i % 2 == 0) {
+			console.log(i);
     }
-}
-Even(n);
+      }
+    }
+    let n=22;
+	PrintEvenNumber(n);
 
 //create a function accepting number argument and 
 //countdown till 0 and log 'done' on console
@@ -35,6 +36,11 @@ function num (x){
 num(8);
 
 //print array in reverse order in loop
+let arr = [43, "what", 9, true, "cannot", false, "be", 3.5, true];
+    for (let i=arr.length-1;i>=0; i--){
+         console.log(arr[i]);
+    }
+    
 let arr = [4, "wheat", true, "can", 2.2, true];
 function reverse(arr){
     for(let i=arr.length-1; i>=0; i--){
@@ -52,3 +58,4 @@ let pum = function (a){
     }
 }
 console.log(pum(1)(2)(3));
+
